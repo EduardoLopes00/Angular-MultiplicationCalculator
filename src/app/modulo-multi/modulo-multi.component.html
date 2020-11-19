@@ -1,0 +1,18 @@
+
+<body>
+    
+    <div class="container" style="  align-items: center;
+                                    border: 20px;
+                                    border-color: red;">
+        <H1>Multiplicacao</H1>
+        <div class = "campos">
+            <input id = "campo1" type="text" [value] = "campo1" (keyup) = "alteraValorC1($event)">
+            <input id = "campo2" type="text" [value] = "campo2" (keyup) = "alteraValorC2($event)">
+        </div>
+        
+        <h3 id="resultado"> {{ Resultado }} </h3>
+
+        <button id="mostraHistorico" (click)="mostraHistorico()">Mostrar histórico</button>
+    </div>
+</body>
+
